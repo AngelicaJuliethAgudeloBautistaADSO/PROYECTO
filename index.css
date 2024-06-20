@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+:root{
+    --font-size: 16px;
+    --h1: 6.5rem;
+    --p: 1.25rem;
+    --subTitulos: #279CF0;
+}
+.body{
+    /* font-size: var(--font-size); */
+    background: #DBFAF8;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+/* menu */
+.contenedor_header{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont_logo{
+    height: 18vh;
+}
+.logo{
+    width: 22vh;
+    height: 20vh;
+}
+.boton_menu .boton{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.boton_menu img {
+    height: 60px; 
+}
+/* inicio */
+.container_inicio{
+    background-image: url(inicio_fondo.jpg);
+    opacity: 75%;
+    background-size: cover;/*establece toada la imagen en un contenedor*/
+    background-position: center; /*centra la imagen en el contenedor*/
+    display: flex;
+    justify-content: center;/*centra los elementos horizontalmente*/
+    align-items: center;/*centra verticalmente*/
+}
+.contenedor_inicio {
+    padding: 250px;
+    border-radius: 20px;
+    text-align: center;
+}
+.h1_inicio {
+    font-size: var(--h1);
+    color: #000000;
+    margin-bottom: 10px;
+}
+.p_inicio {
+    font-size: 2.25rem;
+    color: #0f0e0e;
+    margin-bottom: 20px;
+}/**/
+.inicio_boton {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.bott_servicios, .bott_contacto {
+    padding: 10px 20px;
+    font-size: var(--p);
+    color: rgb(20, 20, 20);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.bott_servicios:hover, .bott_contacto:hover {
+    background-color: #bdd8f5;
+}
+/* nosotros */
+
+.container_nosotros {
+    background-image: url('fondo.png');
+    opacity: 70%;
+    background-size: cover;/*establece toada la imagen en un contenedor*/
+   /* background-position: center; centra la imagen en el contenedor*/
+    display: flex;
+    justify-content: center;/*centra los elementos horizontalmente*/
+    align-items: center;/*centra verticalmente*/
+    height: 100vh;
+}
+.contenedor_nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1500px;
+}
+.tarjeta1, .tarjeta2, .tarjeta3 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 4%;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 40%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.h1_nosotros {
+    font-size: 3rem;
+    color: var(--subTitulos);
+    /* margin-bottom: 30px; */
+}
+.p_nosotros {
+    font-size: 1.5rem;
+    color: #333131;
+    line-height: 1.6;
+}
+
+/* servicios */
+.container_servicios {
+    width: 100%;
+    max-width: 50%; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    /* background-color: white; */
+}
+.contenedor_servicios{
+    background-color: white;
+}
+.h1_servicios {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+    color: var(--subTitulos);
+    border-bottom: solid 1px var(--subTitulos);/*se le agrega la linea abajo*/
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-inner {
+    display: flex;
+    width: 300%; /* Ancho total del carrusel */
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    width: 33.333%; /* Tamaño de cada tarjeta en el carrusel */
+    flex: 0  0 auto;
+}
+.card_servicios {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 600px; /* Altura fija para todas las tarjetas */
+}
+.card_servicios img {
+    width: 100%;
+    height: 400px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener la proporción y recortar si es necesario */
+    border-radius: 10px;
+}
+.h2_servicios {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+.p_servicios {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #494949;
+}
+.contenedor_boton {
+    margin-top: 20px;
+}
+.boton_servicios{
+    font-size: 1rem;
+    background-color: #3ed4ca;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    user-select: none;
+}
+#slide1:checked ~ .carousel-inner {
+    transform: translateX(0);
+}
+#slide2:checked ~ .carousel-inner {
+    transform: translateX(-33.333%);
+}
+#slide3:checked ~ .carousel-inner {
+    transform: translateX(-66.666%);
+}
+.button_otrosservicios {
+    margin-top: 30px;
+}
+.btt_servicios {
+    background-color: #28A745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
