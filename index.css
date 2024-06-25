@@ -41,7 +41,7 @@
 }
 /* inicio */
 .container_inicio{
-    background-image: url(inicio_fondo.jpg);
+    background-image: url(imagenes/inicio_fondo.jpg);
     opacity: 75%;
     background-size: cover;/*establece toada la imagen en un contenedor*/
     background-position: center; /*centra la imagen en el contenedor*/
@@ -85,7 +85,7 @@
 /* nosotros */
 
 .container_nosotros {
-    background-image: url('fondo.png');
+    background-image: url('imagenes/fondo.png');
     opacity: 70%;
     background-size: cover;/*establece toada la imagen en un contenedor*/
    /* background-position: center; centra la imagen en el contenedor*/

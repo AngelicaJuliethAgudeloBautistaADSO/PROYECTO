@@ -3,18 +3,60 @@
     padding: 0;
     box-sizing: 0;
 }
+:root{
+    --primary-color: #D7F7F5;
+    --secondary-color: #ebf8f7;
+    --tertiary-color: #272626;
+    --cuartiary-color: #eccccc;
+    --max-width: 1700px;
+    --padding: 8px;
+    --margin: 10px;
+    --border-radius: 30px;
+    --transition: 1s;
+    --font-size: 16px;
+    --h1: 6.5rem;
+    --p: 2.0rem;
+    --spacing: 50px;
+}
 body{
-    /* font-size: var(--font-size); */
-    background: #DBFAF8;
-    padding: 0;
-    margin: 0;
+    background: var(--primary-color);
     font-family: "Montserrat", sans-serif;
 }
 .logo_inicio{
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding);
 }
-.img_logo{
-
+.contenido{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 var(--padding);
+    font-size: var(--p);
+    
+}
+.h1_contenido{
+    font-size: var(--h1);
+}
+.p_contenido{
+    font-size: var(--p);
+}
+.contenido h1, p, img, button{
+    margin-bottom: var(--spacing);
+    color: var(--tertiary-color);
+}
+.img_contenido{
+    width: 45%; /* Ajusta este valor según el tamaño deseado */
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 6px 6px 6px var(--secondary-color);
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
