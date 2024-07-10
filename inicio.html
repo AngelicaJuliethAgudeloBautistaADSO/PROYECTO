@@ -12,12 +12,58 @@
             <img class="img_logo" src="imagenes/logo.png" alt="">
         </div>
         <div class="contenido">
-            <h1 class="h1_contenido">SPA</h1>
-            <p class="p_contenido">cosmetologia y estetica integral para tu vida y tu piel</p>
-            <img class="img_contenido" src="imagenes/img_inicio.jpg" alt="">
-            <div class="botones_contenido">
-                <button>Registrarse</button>
-                <button>Ingresar</button> 
+            <h1 class="h1_contenido">¡Bienvenido/a!</h1>
+            <p class="p_contenido">Esperamos que disfrutes de una experiencia relajante y rejuvenecedora</p>
+            
+            <div>
+                <form class="form-contenedor">
+                    <div class="form-group">
+                        <label for="Nombre"></label>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Apellidos"></label>
+                        <input type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos">
+                    </div>
+                    <div class="form-group">
+                        <label for="Correo"></label>
+                        <input type="text" id="Correo" name="Correo" placeholder="Correo electronico">
+                    </div>
+                    <div class="form-group">
+                        <label for="edad"></label>
+                        <input type="number" name="dia" placeholder="Edad" min="12">
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Género</label>
+                            <select id="genero" name="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                                <option value="prefiere-no-decir">Prefiere no decir</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="documento"></label>
+                        <input type="text" id="documento" name="documento" placeholder="Documento de identidad">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono"></label>
+                        <div class="phone-input">
+                            <select>
+                                <option value="57">+57</option>
+                            </select>
+                            <input type="text" id="telefono" name="telefono" placeholder="Número de teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena"></label>
+                        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+                    </div>
+                <button class="submit" type="submit">Registrar</button>    
+                </form>
+                <div class="login-link">
+                    <p>¿Ya tienes cuenta? <a href="">Ingresar</a></p>
+                </div>
             </div>
         </div>
     </header>

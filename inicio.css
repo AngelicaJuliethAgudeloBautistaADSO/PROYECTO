@@ -37,7 +37,7 @@ body{
     align-items: center;
     padding: 0 var(--padding);
     font-size: var(--p);
-    
+    justify-content: center;
 }
 .h1_contenido{
     font-size: var(--h1);
@@ -45,18 +45,70 @@ body{
 .p_contenido{
     font-size: var(--p);
 }
-.contenido h1, p, img, button{
+.contenido h1, p, button{
     margin-bottom: var(--spacing);
     color: var(--tertiary-color);
 }
-.img_contenido{
-    width: 45%; /* Ajusta este valor según el tamaño deseado */
-    height: auto;
-    border-radius: var(--border-radius);
-    box-shadow: 6px 6px 6px 6px var(--secondary-color);
+.form-contenedor{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 35rem;
+
 }
-button{
-    background: none;
-    border: none;
+.form-contenedor input, .form-contenedor select {
+    width: 100%;
+    padding: 10px;
+    /* margin: 5px 0; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.form-contenedor .form-group {
+    margin-bottom: 15px;
+}
+.form-contenedor .form-group label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: var(--font-size);
+    text-align: left;
+}
+.form-contenedor .form-group .phone-input {
+    display: flex;
+}
+.form-contenedor .form-group .phone-input select {
+    width: 50px;
+    margin-right: 10px;
+}
+.form-contenedor .form-group .phone-input input {
+    flex: 1;
+}
+.form-contenedor .show-password {
+    display: flex;
+    align-items: center;
+}
+.form-contenedor .show-password input {
+    width: auto;
+    margin-left: 10px;
+}
+.submit{
+
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-align: center;
+}
+.form-contenedor .login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.form-contenedor .login-link a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
 }
