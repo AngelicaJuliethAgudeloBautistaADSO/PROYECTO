@@ -82,6 +82,9 @@
 .bott_servicios:hover, .bott_contacto:hover {
     background-color: #bdd8f5;
 }
+a{
+    text-decoration: none;
+}
 /* nosotros */
 
 .container_nosotros {

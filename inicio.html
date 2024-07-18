@@ -7,65 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo_inicio">
-            <img class="img_logo" src="imagenes/logo.png" alt="">
-        </div>
-        <div class="contenido">
-            <h1 class="h1_contenido">¡Bienvenido/a!</h1>
-            <p class="p_contenido">Esperamos que disfrutes de una experiencia relajante y rejuvenecedora</p>
+    <div class="logo_inicio">
+        <img class="img_logo" src="imagenes/logo.png" alt="">
+    </div>
+    <div class="contenido">
+        <h1>¡Bienvenido/a!</h1>
+        <p >Esperamos que disfrutes de una experiencia relajante y rejuvenecedora</p>    
+        
+        <form>
+            <label for="Nombre"></label>
+            <input id="Nombre" name="Nombre" placeholder="Nombre" autocomplete="off">
+        
+            <label for="Apellidos"></label>
+            <input id="Apellidos" name="Apellidos" placeholder="Apellidos" autocomplete="off">
+        
+            <label for="Correo"></label>
+            <input id="Correo" name="Correo" placeholder="Correo electronico" autocomplete="off">
+        
+            <label for="genero"></label>
+            <select id="genero" name="genero">
+                <option value="">Género</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+            </select>
+        
+            <label for="tipo"></label>
+            <select id="tipo">
+                <option value="">tipo de documento</option>
+                <option value="1">Tarjeta de identidad</option>
+                <option value="2">Cedula de ciudadania</option>
+                <option value="3">Otro</option>
+            </select>
+            <label for="documento"></label>
+            <input id="documento" name="documento" placeholder="Documento de identidad" autocomplete="off">
+        
+            <label for="telefono"></label>
+                <input id="telefono" name="telefono" placeholder="Número de teléfono" autocomplete="off">
+        
+            <label for="contrasena"></label>
+            <input id="contrasena" name="contrasena" placeholder="Contraseña" autocomplete="off">
             
-            <div>
-                <form class="form-contenedor">
-                    <div class="form-group">
-                        <label for="Nombre"></label>
-                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="Apellidos"></label>
-                        <input type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos">
-                    </div>
-                    <div class="form-group">
-                        <label for="Correo"></label>
-                        <input type="text" id="Correo" name="Correo" placeholder="Correo electronico">
-                    </div>
-                    <div class="form-group">
-                        <label for="edad"></label>
-                        <input type="number" name="dia" placeholder="Edad" min="12">
-                    </div>
-                    <div class="form-group">
-                        <label for="genero">Género</label>
-                            <select id="genero" name="genero">
-                                <option value="masculino">Masculino</option>
-                                <option value="femenino">Femenino</option>
-                                <option value="otro">Otro</option>
-                                <option value="prefiere-no-decir">Prefiere no decir</option>
-                            </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="documento"></label>
-                        <input type="text" id="documento" name="documento" placeholder="Documento de identidad">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono"></label>
-                        <div class="phone-input">
-                            <select>
-                                <option value="57">+57</option>
-                            </select>
-                            <input type="text" id="telefono" name="telefono" placeholder="Número de teléfono">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="contrasena"></label>
-                        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
-                    </div>
-                <button class="submit" type="submit">Registrar</button>    
-                </form>
-                <div class="login-link">
-                    <p>¿Ya tienes cuenta? <a href="">Ingresar</a></p>
-                </div>
-            </div>
+            <button type="summit" id="summit">Registrarse</button>    
+        </form>
+        <script src="inicio.js"></script>
+        <div class="login-link">
+            <p class="p_login">¿Ya tienes cuenta? 
+            <a href="ingreso.html" >Ingresar</a></p>
         </div>
-    </header>
+    </div>
+    
 </body>
 </html>
