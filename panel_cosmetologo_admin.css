@@ -75,7 +75,6 @@ button, a {
     border-radius: 5px;
     text-align: center;
 }
-
 .cont_logo{
     padding: 20px;
     display: flex;
@@ -102,20 +101,25 @@ h2 , p{
     margin-bottom: 10px;
     margin-bottom: 60px;
 }
-
-.p_principal {
-    color: var(--color-text-secondary);
-    margin-bottom: 20px;
-    font-size: var(--font-size);
+.boton_panel{
+    background-color: var(--cuartiary-color);
+    color: var(--tertiary-color);
+    padding: 15px 25px;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    text-align: center;
 }
 .tabla_principal {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    margin-bottom: 20px;
 }
-
+.thead_tabla {
+    background-color: var(--color-primary);
+}
 .th_tabla,
 .td_tabla {
     padding: 10px;
-    border-bottom: 1px solid var(--color-primary);
+    border: 5px solid var(--secondary-color);
 }
