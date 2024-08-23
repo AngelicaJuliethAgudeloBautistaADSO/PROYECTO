@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="panel_usuarios_admin.css">
+    <link rel="stylesheet" href="panel_cita_admin.css">
 </head>
 <body>
     <div class="contenedor">
         <aside class="contenedor_lateral">
             <div class="cont_logo">
-                <img src="imagenes/logo.png" alt="">
+                <img src="../imagenes/logo.png" alt="">
                 <p>Cosmetología y Estética Integral</p>
             </div>
             <button class="boton_logo">
@@ -40,11 +40,28 @@
         <main class="cont_logo">
             <div class="panel">
                 <div class="contenido_principal">
-                    <h2 class="h2_principal">Servicios</h2>
-                    <button class="boton_panel">
-                        <a href="">+ Agregar servicio</a>
-                    </button>
-                    
+                    <h2 class="h2_principal">Citas</h2>
+                    <table class="tabla_principal">
+                        <thead class="thead_tabla">
+                            <tr class="tr_tabla">
+                                <th class="th_tabla">Codigo</th>
+                                <th class="th_tabla">ID cliente</th>
+                                <th class="th_tabla">ID Cosmetolog@</th>
+                                <th class="th_tabla">Fecha y hora</th>
+                                <th class="th_tabla">Codigo Servicio</th>
+                                <th class="th_tabla">Acciones</th>
+                                <!-- <td>
+                                    <div class="boton_modif_elim">
+                                        <button class="modificar">Modificar</button>
+                                        <button class="eliminar">Eliminar</button>
+                                    </div>
+                                </td>  -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>

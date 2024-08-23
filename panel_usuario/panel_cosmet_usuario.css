@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #D7F7F5;
+    --secondary-color: #ebf8f7;
+    --tertiary-color: #272626;
+    --cuartiary-color: #eccccc;
+    --max-width: 1700px;
+    --sidebar-width:250px;
+    --padding: 8px;
+    --margin: 10px;
+    --border-radius: 30px;
+    --transition: 1s;
+    --font-size: 16px;
+    --h1: 6.5rem;
+    --h2:3.5rem;
+    --p: 2.0rem;
+}
+body{
+    background: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: 100vh;
+}
+button, a {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.contenedor{
+    display: flex;
+}
+.contenedor_lateral{
+    width: 20%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cont_logo img {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    margin-bottom: 20px;    
+}
+.boton_logo{
+    background-color: var(--cuartiary-color);
+    color: var(--tertiary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+.nav_logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.button_nav_logo{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.cont_logo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.panel{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+}
+.contenido_principal{
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    padding: 20px;
+}
+h2 , p{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.h2_principal {
+    font-size: var(--h2);
+    margin-bottom: 10px;
+    margin-bottom: 60px;
+}
+.p_principal{
+    margin-bottom: 30px;
+}
+.boton_panel{
+    background-color: var(--cuartiary-color);
+    color: var(--tertiary-color);
+    padding: 15px 25px;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40px;
+}
+.tabla_principal {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.thead_tabla {
+    background-color: var(--color-primary);
+}
+.th_tabla,
+.td_tabla {
+    padding: 10px;
+    border: 5px solid var(--secondary-color);
+}
