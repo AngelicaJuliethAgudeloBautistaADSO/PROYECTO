@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="panel_Citas_usuario.css">
+    <link rel="stylesheet" href="panel_config_usuario.css">
 </head>
 <body>
     <div class="contenedor">
@@ -41,21 +41,19 @@
                     <p class="p_principal">Reserva tu cita con el tratamiento que mas te halla gustado:</p>
                     <div class="cont_reservar">
                         <h2>Reserva tu cita</h2>
-                        <label for="fecha">Fecha:</label>
-                        <input class="boton_panel" type="date" id="fecha" placeholder="dd / mm / aaaa">
-
-                        <select class="elegir_servicio" name="servicio" id="servicio" placeholder="Elige el servicio que desees">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
+                        <input class="boton_panel" type="text" id="fecha" placeholder="Nombre">
+                        <input class="boton_panel" type="text" id="fecha" placeholder="Apellido">
+                        <input class="boton_panel" type="number" id="fecha" placeholder="Edad">
+                        <label for="genero"></label>
+                        <select id="genero" name="genero">
+                            <option value="">Género</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Otro</option>
                         </select>
+                        <input class="boton_panel" type="number" id="fecha" placeholder="Telefono">
+                        <input class="boton_panel" type="email" id="fecha" placeholder="Email">
 
-                        <label for="hora">Hora:</label>
-                        <input class="hora" type="time" id="hora" name="hora"></input>
-
-                        <button class="boton_panel">
-                            <a href="">Reservar</a>
-                        </button>
                     </div>
                 </div>
             </div>
