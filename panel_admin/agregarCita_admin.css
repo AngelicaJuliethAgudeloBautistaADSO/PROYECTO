@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+:root{
+    --primary-color: #D7F7F5;
+    --secondary-color: #ebf8f7;
+    --tertiary-color: #272626;
+    --cuartiary-color: #eccccc;
+    --max-width: 1700px;
+    --padding: 8px;
+    --margin: 10px;
+    --border-radius: 30px;
+    --transition: 1s;
+    --font-size: 16px;
+    --h1: 6.5rem;
+    --p: 2.0rem;
+    --spacing: 50px;
+}
+body{
+    background: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(62deg, #d7f7f585 0%, #d7f7f5a1 100%) , url(imagenes/fondo_registro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo_inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding);
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 var(--padding);
+    font-size: var(--p);
+    justify-content: center;
+}
+form{
+    max-width: 450px;
+    width: 560px;
+    margin: 0 auto;
+    background-color:var(--secondary-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px
+}
+.cont_reservar{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    border-radius: 15px;
+}
+p ,a{
+    margin-bottom: 20px;
+    font-size: var(--font-size);
+    text-decoration: none;
+}
+input , select{
+    border: 1px solid #cecece;
+    outline: none;
+    padding: 15px 100px;
+    border-radius: 5px;
+}
+label {
+    font-size: var(--font-size);
+    margin-top: 20px;
+}
+select{
+}
+.hora{
+    padding: 15px 55px; 
+    border-radius: 5px;
+}
+.boton_panel{
+    background-color: var(--cuartiary-color);
+    /* color: var(--tertiary-color); */
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
